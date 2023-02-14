@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    
+    font-family: 'Poppins', sans-serif; 
+}
+
+
+nav.container {
+    margin: 0;
+    justify-content: center;
+    display: inline;
+}
+
+.navigation-title {
+    /* font-family: 'Poppins', sans-serif; */
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+.navigation-items {
+    /* font-family: 'Poppins', sans-serif; */
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.advertise-section1{
+    width: 80%;
+}
+.advertise-section1 button{
+    width: 8rem;
+}
+.advertiseHeading {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    /* font-size: 5vw; */
+}
+.advertiseBody {
+    /* font-family: 'Poppins', sans-serif; */
+    font-weight: 400;
+    font-size: 1rem;
+    /* font-size: 1.5vw; */
+}
+.addvertise-section1-ele a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.advertise-section2{
+    position: relative;
+    width: 80%;
+    justify-content: center;
+    display: flex;
+}
+.advertise-section2-bgImage{
+    position: absolute;
+    margin-top: 6rem;
+    width: 80%;
+}
+.advertise-section2-image {
+    position: relative;
+    z-index: 110;
+    width: 80%;
+}
+
+.advertise-section2-members {
+    position: absolute;
+    z-index: 120;
+    left: 55%;
+    top: 90%;
+    
+}
+
+.management-ele1{
+    /* font-size: 2rem; */
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    /* line-height: 10px; */
+}
+.management-item-details{
+    font-weight: 400;
+    /* font-size: 1rem; */
+    /* font-size: 2vw; */
+    font-size: 1rem;
+    color: #828282;
+}
+
+.management-item1 {
+    box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.07);
+    border-radius: 5px;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+.management {
+    flex-direction: column;
+    width: 100%;
+    margin: 3rem 0 ;
+    /* flex-wrap:wrap; */
+}
+
+.process-bio {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #727272;
+}
+.process p span {
+    color: #6F77F1;
+}
+.process-heading {
+    font-weight: 500;
+    font-size: 2rem;
+    color: #212528;
+    text-transform: capitalize;
+}
+.process-body {
+    flex-direction: column;
+}
+.process-ele1 {
+    color: #212528;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.process-ele2 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #828282;
+}
+.process-item1 {
+    background-repeat: no-repeat;
+    background-position:  60%;
+}
+.process-ele3 {
+    position: absolute;
+    z-index: -1;
+    width: 90vw;
+}
+.process-item1:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 14px 2px rgba(14, 17, 60, 0.03);
+    background-repeat: no-repeat;
+    background-position: 60%;
+}
+
+.businessSolution {
+    flex-direction: column;
+    /* margin-top: 12rem; */
+}
+
+.solution p span {
+    color: #6F77F1;
+}
+.solution-heading {
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #212528;
+    text-transform: capitalize;
+}
+.solution-bio {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #727272;
+}
+
+.solution-ele1 {
+    width: 90vw;
+}
+.businessSolution {
+    /* display: flex;
+    flex-direction: row; */
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    background: #FAFAFA;
+    
+}
+
+@media  (min-width:750px) {
+    .advertiseHeading {
+        font-size: 3.5rem;
+    }
+    .advertiseBody {
+        font-size: 1.25rem;
+    }
+    .advertise-section1{
+        width: 50%;
+    }
+    .advertise-section2 {
+        width: 35%;
+    }
+    .management {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .management-item1 {
+        width: 28%;
+        flex-wrap: wrap;
+        margin: 2px;
+    }
+    .management-ele1 {
+        font-size: 1.8rem;
+    }
+    .management-item-details {
+        font-size: 1rem;
+    }
+
+    .process-heading {
+        font-size: 3rem;
+    }
+    .process-bio {
+        font-size: 1.2rem;
+    }
+    .process-body {
+        display: flex;
+        flex-direction: row;
+    }
+    .process-item1 {
+        padding: 2rem;
+    }
+    .process-ele3 {
+        position: absolute;
+        z-index: -1;
+        width:25%;
+    }
+
+    .businessSolution {
+        /* display: flex;
+        flex-direction: row; */
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+        background: #FAFAFA;
+        
+    }
+
+    .solution {
+        width: 50%;
+    }
+    .solution-heading {
+        font-size: 2rem;
+    }
+    .solution-bio {
+        font-size: .6rem;
+    }
+    .businessSolution-ele1 {
+        width: 50%;
+        height: 60%;
+    }
+}
