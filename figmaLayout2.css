@@ -85,6 +85,9 @@ nav.container {
     justify-content: center;
     /* line-height: 10px; */
 }
+.management-image {
+    width: 30%;
+}
 .management-item-details{
     font-weight: 400;
     /* font-size: 1rem; */
@@ -267,6 +270,9 @@ summary {
 .useses-item1 {
     width: 85%;
 }
+.useses-part2-item1 {
+    width: 30%;
+}
 .useses-part2-item1-ele1 {
     font-weight: 500;
     font-size: 1.5rem;
@@ -282,7 +288,6 @@ summary {
     background: #FFFFFF;
     box-shadow: 5px 25px 37px rgba(2, 22, 5, 0.06);
     border-radius: 4px;
-
 }
 
 .rating {
@@ -502,11 +507,10 @@ summary {
         margin: 2px;
     }
     .management-ele1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     .management-ele1 img {
-        width: 40%;
-
+        width: 25%;
     }
     .management-item-details {
         font-size: 1rem;
@@ -578,6 +582,9 @@ summary {
     }
     .useses-item1 {
         width: 50%;
+    }
+    .useses-part2-item1 {
+        width: 15%;
     }
     .useses-part2-item1-ele1 {
         font-weight: 500;
