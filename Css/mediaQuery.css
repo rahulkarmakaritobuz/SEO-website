@@ -1,0 +1,215 @@
+@media  (min-width:750px) {
+
+    .nav-margin {
+        margin: 0rem 3.9rem 0rem 3.9rem;
+    }
+    
+    .advertise {
+        display: flex;
+        flex-direction: row;
+    }
+    .advertiseHeading {
+        font-size: 3.5rem;
+    }
+    .advertiseBody {
+        font-size: 1.25rem;
+    }
+    .advertise-section1{
+        width: 50%;
+    }
+    .advertise-section2 {
+        width: 45%;
+    }
+    
+    .management {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .management-item1 {
+        width: 28%;
+        flex-wrap: wrap;
+        margin: 2px;
+    }
+    .management-ele1 {
+        font-size: 1.5rem;
+    }
+    .management-ele1 img {
+        width: 25%;
+    }
+    .management-item-details {
+        font-size: 1rem;
+    }
+
+    .process-heading {
+        font-size: 3rem;
+    }
+    .process-bio {
+        font-size: 1.2rem;
+    }
+    .process-body {
+        display: flex;
+        flex-direction: row;
+        background-position-x:right ;
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+        background-size: 50%;
+    }
+    .process-item1 {
+        /* padding: 2rem; */
+        padding: 1rem;
+        width: 23%;
+    }
+    .process-ele3 {
+        position: absolute;
+        z-index: -1;
+        width:25%;
+    }
+
+    .businessSolution {
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+        background: #FAFAFA; 
+    }
+
+    .solution {
+        width: 50%;
+    }
+    .solution-heading {
+        font-size: 2rem;
+    }
+    .solution-bio {
+        font-size: .8rem;
+    }
+    .businessSolution-ele1 {
+        width: 50%;
+        height: 60%;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: row;
+        margin: 1.5rem 3rem 1.5rem 3rem;
+    }
+    .benifits-body {
+        display: flex;
+        flex-direction: row;
+    }
+    .benifits-item1 {
+        width: 30%;
+        /* margin: 0 2rem; */
+    }
+    .benifits-item1-ele1 {
+        max-width: 90%;
+        padding: 3rem 0;
+    }
+    .benifits-item1-ele1-social {
+        padding: 1.5rem 0;
+        max-width: 90%;
+    }
+
+    .useses {
+        display: flex;
+        flex-direction: row;
+    }
+    .useses-part1 {
+        text-align: left;
+    }
+    .useses-part2 {
+        padding-left: 1.5rem;
+        /* padding: 3rem; */
+        /* flex-direction: row; */
+    }
+    /* .useses-part1-ele1,.useses-part1-ele2 {
+        padding: 1.5rem;
+    } */
+    .useses-item1 {
+        width: 50%;
+    }
+    .useses-part2-item1 {
+        /* width: 15%; */
+        max-width: 100%;
+    }
+    .useses-part2-item1-ele1 {
+        font-weight: 500;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        color: #212528;
+    }
+    .useses-part2-item1-ele2 {
+        font-weight: 400;
+        font-size: .8rem;
+        color: #828282;
+    }
+
+    .rating {
+        display: flex;
+        flex-direction: row;
+        padding: 1.5rem;
+    }
+    .rating-item2 {
+        font-size: 4rem;
+        padding: 2rem 2rem;
+        line-height: 2rem;
+    }
+    .rating-item1-ele1 {
+        font-weight: 600;
+        font-size: 3rem;
+        color: #666565;
+    }
+    .rating-item1-ele2 {
+        font-weight: 500;
+        font-size: .9rem;
+        color: #6F6F6F;
+    }
+
+    .speedCheck {
+        display: flex;
+        flex-direction: row;
+    }
+    .speedCheck-item1 {
+        width: 37%;
+    }
+    .speedCheck-item2 {
+        width: 60%;
+        text-align: start;
+        /* padding-left:.5rem ; */
+        /* margin-left: 10%; */
+    }
+    .speedCheck-item1 img {
+        max-width: 100%;
+    }
+    .speedCheck-item3 {
+        flex-direction: row;
+    }
+
+    .suscriptions-body {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .members {
+        display: flex;
+        flex-direction: row;
+
+    }
+    .teams-item1 {
+        width:auto
+    }
+    /* .clientsSays {
+        display: flex;
+        flex-direction: row;
+    } */
+    .formBox {
+        /* width: 70%; */
+        padding: 0rem 4rem 0rem 4rem;
+        max-width: 100%;
+        background: #FAFAFA;
+        border-radius: 16px;
+    }
+    
+    .formBox-item1 {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

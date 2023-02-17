@@ -13,20 +13,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="styleSheet" href="figmaLayout2.css">
+    <link rel="styleSheet" href="./Css/figmaLayout2.css">
+    <link rel="styleSheet" href="./Css/mediaQuery.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>Figma Layout2</title>
 </head>
 
 <body class="">
 
     <!-- Example Code -->
-
+    <!-- NAV BAR VIEW -->
     <nav class="container">
-        <div class="p-3 navbar-expand-lg">
+        <div class="navbar-expand-lg nav-margin">
             <div class="row justify-content-between">
 
                 <a class="col-3 navbar-brand navigation-title " href="#">nuvosa</a>
-                
+
                 <button class="col-2 navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -68,7 +71,9 @@
         </div>
     </nav>
 
-    <section class="d-flex p-3 justify-content-around flex-column flex-sm-row align-items-center advertise">
+    <!-- PAGE HEADING -->
+
+    <section class=" nav-margin justify-content-between align-items-center advertise">
         <div class="d-flex flex-column justify-content-center advertise-section1">
             <p class="advertiseHeading">Increase your web traffic with our</p>
             <p class="advertiseBody">
@@ -92,42 +97,49 @@
         </div> -->
     </section>
 
-    <section class="d-flex p-3 align-items-center mb-5 management">
+    <!-- MANAGEMENT CARDS -->
+
+    <section class="d-flex nav-margin align-items-center mb-5 management">
         <div class="d-flex flex-column management-item1">
             <div class="management-ele1 d-flex">
                 <img src="./Images/img.png" alt="" class="management-image">
-                <p class="">Social Media Management</p>
+                <p class="ms-2">Social Media Management</p>
             </div>
             <p class="management-item-details">It is a long established fact that a reader will be distracted by the
                 readable content .It is a long
                 established fact that .</p>
-            <div class="d-flex justify-content-end"><button class="btn fa fa-arrow-right management-button"></button></div>
+            <div class="d-flex justify-content-end"><button class="btn fa fa-arrow-right management-button"></button>
+            </div>
         </div>
         <div class="d-flex flex-column management-item1">
             <div class="d-flex management-ele1 d-flex">
-                <img src="./Images/img1.png" alt="" class="management-image">Email Marketing
-
+                <img src="./Images/img1.png" alt="" class="management-image">
+                <p class="ms-2">Email Marketing</p>
             </div>
             <p class="management-item-details">It is a long established fact that a reader will be distracted by the
                 readable content .It is a long established fact that .</p>
-                <div class="d-flex justify-content-end"><button class="btn fa fa-arrow-right management-button"></button></div>
+            <div class="d-flex justify-content-end"><button class="btn fa fa-arrow-right management-button"></button>
+            </div>
         </div>
         <div class="d-flex flex-column management-item1">
             <div class="d-flex management-ele1">
-                <img src="./Images/img2.png" alt="" class="management-image">SEO Management
-                <!-- <p>SEO Management</p> -->
+                <img src="./Images/img2.png" alt="" class="management-image">
+                <p class="ms-2">SEO Management</p>
             </div>
             <p class="management-item-details">It is a long established fact that a reader will be distracted by the
                 readable content .It is a long established fact that a reader .</p>
-                <div class="d-flex justify-content-end"><button class="btn fa fa-arrow-right management-button"></button></div>
+            <div class="d-flex justify-content-end"><button class="btn fa fa-arrow-right management-button"></button>
+            </div>
         </div>
     </section>
 
-    <section class="d-flex p-3 mt-5 flex-column process">
+    <!-- OPTIMISING YOUR WEBSITE -->
+
+    <section class="d-flex nav-margin mt-5 flex-column process">
         <p class="process-heading">Optimising your <span>Website</span></p>
         <p class="process-bio">It is a long established fact that a reader will be distracted by the readable content of
             a page when It is a long .</p>
-        <div class="flex mb-4 mt-4 ms-5 me-5 position-relative process-body">
+        <div class="flex mb-4 mt-4 justify-content-between  position-relative process-body">
             <div class="d-flex flex-column process-item1" style="background-image: url(./Images/1.png);">
                 <div class="position-relative mt-3 mb-5">
                     <img src="./Images/Ellipse 26.png" class="position-absolute">
@@ -173,9 +185,11 @@
         </div>
     </section>
 
+    <!-- PERFECT BUSINESS SOLUTION -->
+
     <section class="businessSolution ">
-        <div class="container">
-            <div class="row">
+        <div class="container-fluid">
+            <div class="row nav-margin">
                 <div class="col-lg-4 d-flex justify-content-center flex-column mb-5 mt-3 solution">
                     <p class="solution-heading">Perfect Solution For Your <span>Business</span></p>
                     <p class="solution-bio mb-5">It is a long established fact that a reader will be distracted by the
@@ -190,7 +204,9 @@
         </div>
     </section>
 
-    <section class="mb-4 mt-4 ms-5 me-5 align-items-center features">
+    <!-- QUALITIES FEATURES -->
+
+    <section class=" align-items-center features">
         <div class="d-flex flex-column mb-4 p-3 position-relative features-item1">
             <div class="position-relative mb-4">
                 <img src="./Images/Lightning2.png" class="position-relative">
@@ -217,36 +233,37 @@
         </div>
     </section>
 
-    <section class="d-flex flex-column text-center  align-items-center benifits">
-        <div class="p-5 pb-1">
+    <!-- WHY YOU SHOULD CHOOSE US -->
+
+    <section class="d-flex flex-column text-center align-items-center benifits">
+        <div class="nav-margin mt-4 mb-4 pb-1">
             <p class="benifits-ele1">why you should <span>choose us.</span></p>
-            <p class="benifits-ele2">It is a long established fact that a reader will be distracted by the readable
-                content .It is a long
-                established fact that a reader .It is a long established fact that a reader will be .</p>
+            <p class="benifits-ele2 p-2">It is a long established fact that a reader will be distracted by the readable
+                content .It is a long established fact that a reader .It is a long established fact that a reader will be .</p>
         </div>
-        <div class="justify-content-center align-items-center benifits-body">
-            <div class="d-flex p-3 flex-column align-items-center benifits-item1">
+        <div class="justify-content-between nav-margin align-items-center benifits-body">
+            <div class="d-flex flex-column align-items-center benifits-item1">
                 <img src="./Images/image 30.png" class="benifits-item1-ele1 ">
                 <p class="benifits-item1-ele2">See optimazadion</p>
-                <p class="benifits-item1-ele3 ">It is a long established fact that a reader will be distracted by.It is
+                <p class="benifits-ele2 p-2">It is a long established fact that a reader will be distracted by.It is
                     a long established.</p>
                 <div class="mb-4 addvertise-section1-ele">
-                    <button class="btn bg-warning me-4">Learn More </button>
+                <button class="btn bg-warning me-4">Learn More </button>
                 </div>
             </div>
-            <div class="d-flex p-3 flex-column align-items-center benifits-item1">
+            <div class="d-flex  flex-column align-items-center benifits-item1">
                 <img src="./Images/image 31.png" class="benifits-item1-ele1 ">
                 <p class="benifits-item1-ele2">Keyword research</p>
-                <p class="benifits-item1-ele3 ">It is a long established fact that a reader will be distracted by.It is
+                <p class="benifits-ele2 p-2">It is a long established fact that a reader will be distracted by.It is
                     a long established.</p>
                 <div class="mb-4 addvertise-section1-ele">
                     <button class="btn bg-warning me-4">Learn More </button>
                 </div>
             </div>
-            <div class="d-flex p-3 flex-column align-items-center benifits-item1">
-                <img src="./Images/image32.png" class="benifits-item1-ele1 ">
+            <div class="d-flex  flex-column align-items-center benifits-item1">
+                <img src="./Images/image32.png" class="benifits-item1-ele1-social ">
                 <p class="benifits-item1-ele2">Social marketing</p>
-                <p class="benifits-item1-ele3 ">It is a long established fact that a reader will be distracted by.It is
+                <p class="benifits-ele2 p-2">It is a long established fact that a reader will be distracted by.It is
                     a long established.</p>
                 <div class="mb-4 addvertise-section1-ele">
                     <button class="btn bg-warning me-4">Learn More </button>
@@ -255,13 +272,16 @@
         </div>
     </section>
 
-    <section class="align-items-center useses">
+    <!-- YOU MAKE ASK WHAT SEO & WHY DO YOU NEED IT?  -->
+
+    <section class="align-items-center nav-margin useses">
         <img src="./Images/image 34.png" class="mt-4 mb-4 useses-item1">
-        <div class="d-flex flex-column mt-2 mb-3 text-center useses-part1">
-            <div class="benifits-ele1 p-4 useses-part1-ele1">You make ask what SEO & why do you <span>need it?</span> </div>
-            <div class="benifits-ele2 p-4 useses-part1-ele2 mb-5">It is a long established fact that a reader will be
+        <div class="d-flex flex-column mt-5 mb-3 useses-part1">
+            <div class="benifits-ele1 mb-4">You make ask what SEO & why do you <span>need it?</span>
+            </div>
+            <div class="benifits-ele2 mb-5">It is a long established fact that a reader will be
                 distracted by the readable content .It is a long established fact that a reader .It is a long.</div>
-            <div class="d-flex p-4 align-items-center justify-content-center text-start useses-part2">
+            <div class="d-flex align-items-center justify-content-center text-start useses-part2">
                 <img src="./Images/email.png" class="me-4 useses-part2-item1">
                 <div class="d-flex flex-column useses-part2-item2">
                     <p class="useses-part2-item1-ele1">Social media marketing</p>
@@ -269,7 +289,7 @@
                         the.</p>
                 </div>
             </div>
-            <div class="d-flex p-4 align-items-center justify-content-center text-start useses-part2">
+            <div class="d-flex align-items-center justify-content-center text-start useses-part2">
                 <img src="./Images/email2.png" class="me-4 useses-part2-item1">
                 <div class="d-flex flex-column useses-part2-item2">
                     <p class="useses-part2-item1-ele1">Email marketing</p>
@@ -277,7 +297,7 @@
                         the.</p>
                 </div>
             </div>
-            <div class="d-flex p-4 align-items-center justify-content-center text-start useses-part2">
+            <div class="d-flex align-items-center justify-content-center text-start useses-part2">
                 <img src="./Images/email3.png" class="me-4 useses-part2-item1">
                 <div class="d-flex flex-column useses-part2-item2">
                     <p class="useses-part2-item1-ele1">SEO optimization</p>
@@ -288,8 +308,10 @@
         </div>
     </section>
 
-    <section class="text-center justify-content-center pt-4 pb-4 rating">
-        <div class="rating-border p-3 rating">
+    <!-- RATINGS -->
+
+    <section class="text-center nav-margin justify-content-center pt-4 pb-4 rating">
+        <div class="rating-border rating">
             <div class="d-flex flex-column rating-item1">
                 <p class="rating-item1-ele1">86</p>
                 <p class="rating-item1-ele2">Happy Clients</p>
@@ -312,191 +334,209 @@
         </div>
     </section>
 
-    <section class="p-3 pt-4 text-center align-items-center speedCheck">
+    <!-- CHECK YOUR WEBSITE SPEED -->
+
+    <section class=" pt-4 pb-4 nav-margin text-center justify-content-between align-items-center speedCheck">
         <div class="d-flex pb-4 flex-column speedCheck-item2">
             <p class="benifits-ele1 speedCheck-item1-ele1">Check your website <span>speed</span></p>
-            <p class="benifits-ele2 speedCheck-item1-ele1 p-3 ps-0">It is a long established fact that a reader will be distracted by the readable content .It is a long
+            <p class="benifits-ele2 speedCheck-item1-ele1 ps-0">It is a long established fact that a reader will be
+                distracted by the readable content .It is a long
                 established fact that a reader .It is a long.</p>
-                <div class="speedCheck-item3">
-                    <input type="url" placeholder="Web URL" class="speedCheck-item3-ele1 m-2" id="speedCheck-url">
-                    <input type="email" placeholder="Email Address" class="speedCheck-item3-ele1 m-2" id="speedCheck-email">
-                    <button class="btn bg-warning m-2 ms-4" onclick=speedCheckSubmit()>Submit</button>  
-                    <div class="mt-3 text-success" id="submitStatus"></div>
-                </div>
+            <div class="speedCheck-item3 d-flex">
+                <input type="url" placeholder="Web URL" class="speedCheck-item3-ele1 m-2" id="speedCheck-url">
+                <input type="email" placeholder="Email Address" class="speedCheck-item3-ele1 m-2" id="speedCheck-email">
+                <button class="btn bg-warning m-2 " onclick=speedCheckSubmit()>Submit</button>
+                <div class="mt-3 text-success" id="submitStatus"></div>
+            </div>
         </div>
-        <img src="./Images/image 33.png" class="speedCheck-item1">
+        <div class="speedCheck-item1">
+            <img src="./Images/image 33.png">
+        </div>
     </section>
 
-    <section class="d-flex flex-column text-center align-items-center suscriptions">
-        <p class="suscriptions-ele1">Our Plans</p>
+    <!-- OUR PLANS -->
+
+    <section class="d-flex flex-column text-center nav-margin align-items-center suscriptions">
+        <p class="suscriptions-ele1 mt-4">Our Plans</p>
         <p class="suscriptions-ele2">Choose the right SEO for you</p>
-        <div class="suscriptions-body">
-            <div class="d-flex flex-column suscriptions-item1 m-3 pt-4 pb-5 ps-3 pe-3">
+        <div class="suscriptions-body justify-content-between mb-5">
+            <div class="d-flex flex-column suscriptions-item1 m-3 pt-4 pb-5 ">
                 <p class="suscriptions-item1-ele1">Plue</p>
                 <h1 class="suscriptions-item1-ele2"><sup>$</sup>46<sub>/month</sub></h1>
                 <p class="suscriptions-ele2">408GB Bandwidth</p>
                 <p class="suscriptions-ele2">Business & Finance Analysing</p>
                 <p class="suscriptions-ele2">24 Hour Support</p>
-                <p class="suscriptions-ele2" >Customer Management</p>
+                <p class="suscriptions-ele2">Customer Management</p>
                 <button class="btn suscriptions-item1-ele4 ms-5 me-5">Get Started</button>
             </div>
-            <div class="d-flex flex-column suscriptions-item1 m-3 pt-4 pb-5 ps-3 pe-3">
+            <div class="d-flex flex-column suscriptions-item1 m-3 pt-4 pb-5 ">
                 <p class="suscriptions-item1-ele1">Beginner</p>
                 <h1 class="suscriptions-item1-ele2"><sup>$</sup>66<sub>/month</sub></h1>
                 <p class="suscriptions-ele2">408GB Bandwidth</p>
                 <p class="suscriptions-ele2">Business & Finance Analysing</p>
                 <p class="suscriptions-ele2">24 Hour Support</p>
-                <p class="suscriptions-ele2" >Customer Management</p>
+                <p class="suscriptions-ele2">Customer Management</p>
                 <button class="btn suscriptions-item1-ele4 ms-5 me-5">Get Started</button>
             </div>
-            <div class="d-flex flex-column suscriptions-item1 m-3 pt-4 pb-5 ps-3 pe-3">
+            <div class="d-flex flex-column suscriptions-item1 m-3 pt-4 pb-5 ">
                 <p class="suscriptions-item1-ele1">Beginner</p>
                 <h1 class="suscriptions-item1-ele2"><sup>$</sup>86<sub>/month</sub></h1>
                 <p class="suscriptions-ele2">408GB Bandwidth</p>
                 <p class="suscriptions-ele2">Business & Finance Analysing</p>
                 <p class="suscriptions-ele2">24 Hour Support</p>
-                <p class="suscriptions-ele2" >Customer Management</p>
+                <p class="suscriptions-ele2">Customer Management</p>
                 <button class="btn suscriptions-item1-ele4 ms-5 me-5">Get Started</button>
             </div>
         </div>
     </section>
 
-    <section class="d-flex flex-column text-center  mt-5">
+    <!-- OUR EXPERT TEAM MEMBERS -->
+
+    <section class="d-flex flex-column text-center nav-margin mt-5">
         <p class="benifits-ele1 members-ele1">Our Expert Team <span>Members</span></p>
-        <p class="benifits-ele2 members-ele2">It is a long established fact that a reader will be distracted by the readable content .It is a long established fact that a reader </p>
-        <div class=" mt-5 align-items-center justify-content-center text-center members mb-4">
-           <!-- <div class="text-center align-items-center teams mt-5 mb-4"> -->
-                <div class="d-flex flex-column m-2 align-items-center text-center teams-item1 ">
-                    <img src="./Images/Ellipse 403.png" class="teams-item1-ele1 m-4">
-                    <p class="teams-item1-ele2">Muriel Whee</p>
-                    <p>Marketing Manager</p>
-                    <div class="d-flex members-item2">
-                        <button class="btn fa-brands fa-google"></button>
-                        <button class="btn fa-brands fa-instagram"></button>
-                        <button class="btn fa-brands fa-twitter"></button>
-                        <button class="btn fa-brands fa-facebook"></button>
-                    </div>
+        <p class="benifits-ele2 members-ele2">It is a long established fact that a reader will be distracted by the
+            readable content .It is a long established fact that a reader </p>
+        <div class=" mt-5 align-items-center flex-wrap justify-content-center text-center members mb-4">
+            <!-- <div class="text-center align-items-center teams mt-5 mb-4"> -->
+            <div class="d-flex flex-column m-2 align-items-center text-center teams-item1 ">
+                <img src="./Images/Ellipse 403.png" class="teams-item1-ele1 m-4">
+                <p class="teams-item1-ele2">Muriel Whee</p>
+                <p class="teams-item1-ele3">Marketing Manager</p>
+                <div class="d-flex members-item2">
+                    <button class="btn fa-brands fa-google"></button>
+                    <button class="btn fa-brands fa-instagram"></button>
+                    <button class="btn fa-brands fa-twitter"></button>
+                    <button class="btn fa-brands fa-facebook"></button>
                 </div>
-                <div class="d-flex flex-column m-2 align-items-center text-center teams-item1">
-                    <img src="./Images/Ellipse 404.png" class="teams-item1-ele1 m-4">
-                    <p class="teams-item1-ele2">John Doe</p>
-                    <p>Marketing Manager</p>
-                    <div class="d-flex members-item2">
-                        <button class="btn fa-brands fa-google"></button>
-                        <button class="btn fa-brands fa-instagram"></button>
-                        <button class="btn fa-brands fa-twitter"></button>
-                        <button class="btn fa-brands fa-facebook"></button>
-                    </div>
+            </div>
+            <div class="d-flex flex-column m-2 align-items-center text-center teams-item1">
+                <img src="./Images/Ellipse 404.png" class="teams-item1-ele1 m-4">
+                <p class="teams-item1-ele2">John Doe</p>
+                <p class="teams-item1-ele3">Marketing Manager</p>
+                <div class="d-flex members-item2">
+                    <button class="btn fa-brands fa-google"></button>
+                    <button class="btn fa-brands fa-instagram"></button>
+                    <button class="btn fa-brands fa-twitter"></button>
+                    <button class="btn fa-brands fa-facebook"></button>
                 </div>
-                <div class="d-flex flex-column m-2 align-items-center text-center teams-item1">
-                    <img src="./Images/Ellipse 405.png" class="teams-item1-ele1 m-4">
-                    <p class="teams-item1-ele2">Clay Porter</p>
-                    <p>Marketing Manager</p>
-                    <div class="d-flex members-item2">
-                        <button class="btn fa-brands fa-google"></button>
-                        <button class="btn fa-brands fa-instagram"></button>
-                        <button class="btn fa-brands fa-twitter"></button>
-                        <button class="btn fa-brands fa-facebook"></button>
-                    </div>
+            </div>
+            <div class="d-flex flex-column m-2 align-items-center text-center teams-item1">
+                <img src="./Images/Ellipse 405.png" class="teams-item1-ele1 m-4">
+                <p class="teams-item1-ele2">Clay Porter</p>
+                <p class="teams-item1-ele3">Marketing Manager</p>
+                <div class="d-flex members-item2">
+                    <button class="btn fa-brands fa-google"></button>
+                    <button class="btn fa-brands fa-instagram"></button>
+                    <button class="btn fa-brands fa-twitter"></button>
+                    <button class="btn fa-brands fa-facebook"></button>
                 </div>
-                <div class="d-flex flex-column m-2 align-items-center text-center teams-item1">
-                    <img src="./Images/Ellipse 406.png" class="teams-item1-ele1 m-4">
-                    <p class="teams-item1-ele2">Doug Norm</p>
-                    <p>Marketing Manager</p>
-                    <div class="d-flex members-item2">
-                        <button class="btn fa-brands fa-google"></button>
-                        <button class="btn fa-brands fa-instagram"></button>
-                        <button class="btn fa-brands fa-twitter"></button>
-                        <button class="btn fa-brands fa-facebook"></button>
-                    </div>
+            </div>
+            <div class="d-flex flex-column m-2 align-items-center text-center teams-item1">
+                <img src="./Images/Ellipse 406.png" class="teams-item1-ele1 m-4">
+                <p class="teams-item1-ele2">Doug Norm</p>
+                <p class="teams-item1-ele3">Marketing Manager</p>
+                <div class="d-flex members-item2">
+                    <button class="btn fa-brands fa-google"></button>
+                    <button class="btn fa-brands fa-instagram"></button>
+                    <button class="btn fa-brands fa-twitter"></button>
+                    <button class="btn fa-brands fa-facebook"></button>
                 </div>
+            </div>
             <!-- </div> -->
         </div>
     </section>
 
-    <!-- <section id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="d-flex flex-column carousel-item active pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
-                <img src="./Images/“.png" class="position-absolute clientsSays-item1-ele4 ">
-                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the readable content .It is a long established fact that a reader </p>
+    <!-- OUR CLIENTS SAY -->
+    
+    <section class="swiper mySwiper d-flex flex-column text-center  mt-5">
+        <p class=" suscriptions-ele1 nav-margin">Our clients say</p>
+        <p class="suscriptions-ele2 nav-margin">It is a long established fact that a reader will be distracted by the readable
+            content .It is a </p>
+        <div class="swiper-wrapper p-3 clientsSays text-center align-items-center">
+            <div class="swiper-slide d-flex flex-column pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
+                <img src="./Images/tag.png" class="position-absolute clientsSays-item1-ele4 ">
+                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the
+                    readable content .It is a long established fact that a reader </p>
                 <img src="./Images/Ellipse 404.svg" class="clientsSays-item1-ele6">
                 <p class="clientsSays-item1-ele7">Clay Porter</p>
                 <p class="clientsSays-item1-ele8">Ship builder</p>
             </div>
-            <div class="carousel-item d-flex flex-column pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
-                <img src="./Images/“.png" class="position-absolute clientsSays-item1-ele4 ">
-                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the readable content .It is a long established fact that a reader </p>
+            <div class="swiper-slide carousel-item d-flex flex-column pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
+                <img src="./Images/tag.png" class="position-absolute clientsSays-item1-ele4 ">
+                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the
+                    readable content .It is a long established fact that a reader </p>
                 <img src="./Images/Ellipse 504.svg" class="clientsSays-item1-ele6">
                 <p class="clientsSays-item1-ele7">Clay Porter</p>
                 <p class="clientsSays-item1-ele8">Ship builder</p>
             </div>
-            <div class="carousel-item d-flex flex-column pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
-                <img src="./Images/“.png" class="position-absolute clientsSays-item1-ele4 ">
-                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the readable content .It is a long established fact that a reader </p>
+            <div class="swiper-slide carousel-item d-flex flex-column pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
+                <img src="./Images/tag.png" class="position-absolute clientsSays-item1-ele4 ">
+                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the
+                    readable content .It is a long established fact that a reader </p>
                 <img src="./Images/Ellipse 505.svg" class="clientsSays-item1-ele6">
                 <p class="clientsSays-item1-ele7">Clay Porter</p>
                 <p class="clientsSays-item1-ele8">Ship builder</p>
             </div>
-            <div class="carousel-item d-flex flex-column pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
-                <img src="./Images/" class="position-absolute clientsSays-item1-ele4 ">
-                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the readable content .It is a long established fact that a reader </p>
+            <div class="swiper-slide carousel-item d-flex flex-column pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
+                <img src="./Images/tag.png" class="position-absolute clientsSays-item1-ele4 ">
+                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the
+                    readable content .It is a long established fact that a reader </p>
                 <img src="./Images/Ellipse 506.svg" class="clientsSays-item1-ele6">
                 <p class="clientsSays-item1-ele7">Clay Porter</p>
                 <p class="clientsSays-item1-ele8">Ship builder</p>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <div class="swiper-pagination"></div>
+    </section>
+    
+    <!-- <section class="d-flex flex-column text-center  mt-5">
+        <p class="suscriptions-ele1 nav-margin">Our clients say</p>
+        <p class="suscriptions-ele2 nav-margin">It is a long established fact that a reader will be distracted by the readable
+            content .It is a </p>
+        <div class=" p-3 clientsSays text-center align-items-center">
+            <div
+                class="d-flex flex-column pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
+                <img src="./Images/tag.png" class="position-absolute clientsSays-item1-ele4 ">
+                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the
+                    readable content .It is a long established fact that a reader </p>
+                <img src="./Images/Ellipse 404.svg" class="clientsSays-item1-ele6">
+                <p class="clientsSays-item1-ele7">Clay Porter</p>
+                <p class="clientsSays-item1-ele8">Ship builder</p>
+            </div>
+            <div
+                class="carousel-item d-flex flex-column pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
+                <img src="./Images/tag.png" class="position-absolute clientsSays-item1-ele4 ">
+                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the
+                    readable content .It is a long established fact that a reader </p>
+                <img src="./Images/Ellipse 504.svg" class="clientsSays-item1-ele6">
+                <p class="clientsSays-item1-ele7">Clay Porter</p>
+                <p class="clientsSays-item1-ele8">Ship builder</p>
+            </div>
+            <div
+                class="carousel-item d-flex flex-column pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
+                <img src="./Images/tag.png" class="position-absolute clientsSays-item1-ele4 ">
+                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the
+                    readable content .It is a long established fact that a reader </p>
+                <img src="./Images/Ellipse 505.svg" class="clientsSays-item1-ele6">
+                <p class="clientsSays-item1-ele7">Clay Porter</p>
+                <p class="clientsSays-item1-ele8">Ship builder</p>
+            </div>
+            <div
+                class="carousel-item d-flex flex-column pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
+                <img src="./Images/tag.png" class="position-absolute clientsSays-item1-ele4 ">
+                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the
+                    readable content .It is a long established fact that a reader </p>
+                <img src="./Images/Ellipse 506.svg" class="clientsSays-item1-ele6">
+                <p class="clientsSays-item1-ele7">Clay Porter</p>
+                <p class="clientsSays-item1-ele8">Ship builder</p>
+            </div>
+        </div>
     </section> -->
 
-    <section class="d-flex flex-column text-center  mt-5">
-        <p class="suscriptions-ele1">Our clients say</p>
-        <p class="suscriptions-ele2">It is a long established fact that a reader will be distracted by the readable content .It is a </p>
-        <div class=" p-3 clientsSays text-center align-items-center">
-            <div class="d-flex flex-column pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
-                <img src="./Images/tag.png" class="position-absolute clientsSays-item1-ele4 ">
-                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the readable content .It is a long established fact that a reader </p>
-                <img src="./Images/Ellipse 404.svg" class="clientsSays-item1-ele6">
-                <p class="clientsSays-item1-ele7">Clay Porter</p>
-                <p class="clientsSays-item1-ele8">Ship builder</p>
-            </div>
-            <div class="carousel-item d-flex flex-column pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
-                <img src="./Images/tag.png" class="position-absolute clientsSays-item1-ele4 ">
-                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the readable content .It is a long established fact that a reader </p>
-                <img src="./Images/Ellipse 504.svg" class="clientsSays-item1-ele6">
-                <p class="clientsSays-item1-ele7">Clay Porter</p>
-                <p class="clientsSays-item1-ele8">Ship builder</p>
-            </div>
-            <div class="carousel-item d-flex flex-column pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
-                <img src="./Images/tag.png" class="position-absolute clientsSays-item1-ele4 ">
-                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the readable content .It is a long established fact that a reader </p>
-                <img src="./Images/Ellipse 505.svg" class="clientsSays-item1-ele6">
-                <p class="clientsSays-item1-ele7">Clay Porter</p>
-                <p class="clientsSays-item1-ele8">Ship builder</p>
-            </div>
-            <div class="carousel-item d-flex flex-column pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
-                <img src="./Images/tag.png" class="position-absolute clientsSays-item1-ele4 ">
-                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the readable content .It is a long established fact that a reader </p>
-                <img src="./Images/Ellipse 506.svg" class="clientsSays-item1-ele6">
-                <p class="clientsSays-item1-ele7">Clay Porter</p>
-                <p class="clientsSays-item1-ele8">Ship builder</p>
-            </div>
-        </div>
-    </section>
+    <!-- SUSCRIBE & FIND THE PERFECT COSMETICS -->
 
-   <section class="d-flex justify-content-center mt-5 mb-5 text-center ">
-        <div class="d-flex flex-column p-3 justify-content-center text-center formBox">
+    <section class="d-flex justify-content-center mt-5 mb-5 text-center ">
+        <div class="d-flex flex-column justify-content-center text-center formBox">
             <p class="formBox-title">Subscribe & find the perfect Cosmetics</p>
             <p class="suscriptions-ele2 mb-4">Enter your email and get updated new products & news</p>
             <div class="d-flex formBox-item1 justify-content-center">
@@ -506,36 +546,49 @@
                 <div class="mt-3 text-success" id="suscribe"></div>
             </div>
         </div>
-   </section>
+    </section>
+    <!-- FOOTER -->
 
-
-   <footer class="container">
-    <div class="row">
-        <div><h1 class="text-center">novusa</h1></div>
-    </div>
-    <div class="row pb-5 border-bottom">
-        <ul class="list-unstyled d-flex gap-5 justify-content-center flex-wrap footerBody">
-            <li><a href="#">Overview</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Privacy</a></li>
-        </ul>
-    </div>
-    <div class="row ">
-        <div class="d-flex justify-content-between text-center flex-wrap footerBottom">
-            <p>Copyright © 2023 nuvosa, All rights reserved.</p>
-            <div class="d-flex gap-2"><p>Terms of use</p>
-                <p>copyright & trademark</p>
-                <p>Policy</p>
+    <footer class="container">
+        <div class="row">
+            <div>
+                <h1 class="text-center">novusa</h1>
             </div>
-            
         </div>
-    </div>
-   </footer>
+        <div class="row pb-5 border-bottom">
+            <ul class="list-unstyled d-flex gap-5 justify-content-center flex-wrap footerBody">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+        <div class="row ">
+            <div class="d-flex justify-content-between text-center flex-wrap-reverse footerBottom">
+                <p>Copyright © 2023 nuvosa, All rights reserved.</p>
+                <div class="d-flex gap-2">
+                    <p>Terms of use</p>
+                    <p>copyright & trademark</p>
+                    <p>Policy</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
     <!-- End Example Code -->
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "2",
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        });
+    </script>
     <script src="index.js"></script>
 </body>
 
