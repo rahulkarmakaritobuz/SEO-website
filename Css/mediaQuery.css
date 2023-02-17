@@ -25,14 +25,18 @@
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-top: 3rem;
     }
     .management-item1 {
         width: 28%;
         flex-wrap: wrap;
         margin: 2px;
+        text-align: start;
     }
     .management-ele1 {
         font-size: 1.5rem;
+        flex-direction: row;
+        justify-content: start;
     }
     .management-ele1 img {
         width: 25%;
@@ -41,6 +45,9 @@
         font-size: 1rem;
     }
 
+    .process {
+        text-align: start;
+    }
     .process-heading {
         font-size: 3rem;
     }
@@ -85,11 +92,15 @@
         width: 50%;
         height: 60%;
     }
+     .businessSolution {
+        text-align: start;
+    }
 
     .features {
         display: flex;
         flex-direction: row;
         margin: 1.5rem 3rem 1.5rem 3rem;
+        text-align: start;
     }
     .benifits-body {
         display: flex;
@@ -103,10 +114,10 @@
         max-width: 90%;
         padding: 3rem 0;
     }
-    .benifits-item1-ele1-social {
+    /* .benifits-item1-ele1-social {
         padding: 1.5rem 0;
         max-width: 90%;
-    }
+    } */
 
     .useses {
         display: flex;
@@ -117,6 +128,7 @@
     }
     .useses-part2 {
         padding-left: 1.5rem;
+        flex-direction: column;
         /* padding: 3rem; */
         /* flex-direction: row; */
     }
@@ -125,6 +137,10 @@
     } */
     .useses-item1 {
         width: 50%;
+    }
+    .useses-part2 {
+        flex-direction: row;
+        text-align: start;
     }
     .useses-part2-item1 {
         /* width: 15%; */
@@ -213,3 +229,20 @@
         flex-wrap: wrap;
     }
 }
+
+/* @media(min-width:375px){
+    .management-ele1{
+        font-size: 1.5rem;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .useses-part2 {
+        flex-direction: row;
+        text-align: start;
+    }
+    .businessSolution {
+        text-align: start;
+    }
+    
+} */

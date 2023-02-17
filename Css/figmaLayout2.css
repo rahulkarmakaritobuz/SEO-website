@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-*{
+body{
     padding: 0;
-    margin: 0;
-    
+    margin: 0;  
     font-family: 'Poppins', sans-serif; 
 }
 
@@ -20,20 +19,17 @@ nav.container {
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 .nav-item a:hover {
-        color: #fff;
-        box-shadow: inset 200px 0 0 0 #54b3d6;;
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #54b3d6;
 }
 .nav-margin {
     margin: 0rem 0.938rem 0rem 0.938rem;
 }
-/*  */
 .navigation-title {
-    /* font-family: 'Poppins', sans-serif; */
     font-weight: 500;
     font-size: 2.5rem;
 }
 .navigation-items {
-    /* font-family: 'Poppins', sans-serif; */
     font-weight: 400;
     font-size: 1rem;
 }
@@ -55,7 +51,6 @@ nav.container {
     /* font-size: 5vw; */
 }
 .advertiseBody {
-    /* font-family: 'Poppins', sans-serif; */
     font-weight: 400;
     font-size: 1rem;
     /* font-size: 1.5vw; */
@@ -84,7 +79,6 @@ nav.container {
     /* width: 80%; */
     max-width: 100%;
 }
-
 .advertise-section2-members {
     position: absolute;
     z-index: 120;
@@ -103,12 +97,13 @@ nav.container {
     /* font-size: 2rem; */
     font-size: 1.5rem;
     align-items: center;
-    /* justify-content: center; */
+    flex-direction: column;
+    justify-content: center;
     /* line-height: 10px; */
 }
 .management-image {
     /* width: 30%; */
-    max-width: 100%;
+    max-width: 50%;
 }
 .management-item-details{
     font-weight: 400;
@@ -126,8 +121,12 @@ nav.container {
     /* width: 80%; */
     margin-bottom: 1rem;
     padding: .6rem;
+    text-align: center;
 }
 
+.process {
+    text-align: center;
+}
 .process-bio {
     font-weight: 400;
     font-size: 1rem;
@@ -185,12 +184,11 @@ box-shadow: 0px 10px 14px 2px rgba(14, 17, 60, 0.03);
     flex-direction: column;
     margin-top: 2rem;
     margin-bottom: 4rem;
-    background: #FAFAFA;    
+    background: #FAFAFA;
+    text-align: center;    
 }
 
-/* .solution p span {
-    color: #6F77F1;
-} */
+
 .solution-heading {
     font-weight: 500;
     font-size: 2.5rem;
@@ -202,7 +200,6 @@ box-shadow: 0px 10px 14px 2px rgba(14, 17, 60, 0.03);
     font-size: 1rem;
     color: #727272;
 }
-
 .solution-ele1 {
     width: 90vw;
 }
@@ -212,6 +209,7 @@ box-shadow: 0px 10px 14px 2px rgba(14, 17, 60, 0.03);
     display: flex;
     flex-direction: column;
     margin: 1.5rem 0rem 1.5rem 0rem;
+    text-align: center;
 }
 .features-ele1 {
     font-weight: 500;
@@ -257,8 +255,8 @@ summary {
     padding: 3rem 0rem 2.5rem 0rem;
 }
 .benifits-item1 {
-    width: 80%;
-    /* max-width: 100%; */
+    /* width: 80%; */
+    max-width: 100%;
     /* padding: .5rem 2rem .5rem 2rem; */
     background-color: white;
     margin-bottom: 1.5rem;
@@ -291,7 +289,8 @@ summary {
 .useses-part2 {
     padding: 0;
     margin-bottom: 1rem;
-    /* flex-direction: column; */
+    flex-direction: column;
+    text-align: center;
 }
 /* .useses-part1-ele1,.useses-part1-ele2 {
     padding: 0rem;
@@ -350,6 +349,9 @@ summary {
 }
 .speedCheck-item1 {
     width: 80%;
+}
+.speedCheck-item1 img {
+    max-width: 100%;
 }
 .speedCheck-item3 {
     flex-direction: column;
@@ -437,7 +439,6 @@ summary {
 .teams-item1-ele1 {
     max-width: 100%;
 }
-
 .members-item2 button:hover, .teams-item1-ele2:hover {
     color: #6F77F1;
 }
@@ -522,10 +523,3 @@ summary {
     color: #828282;
     opacity: 0.6;
 }
-/* .suscriptions-item1 p:hover, .suscriptions-item1 h1:hover{
-    color: rgb(255, 255, 255);
-} */
-
-/* .benifits-body {
-
-} */
