@@ -4,6 +4,10 @@
         margin: 0rem 3.9rem 0rem 3.9rem;
     }
     
+    .luxbar-item-ele0 {
+        flex-direction: row;
+    }
+
     .advertise {
         display: flex;
         flex-direction: row;
@@ -57,10 +61,6 @@
     .process-body {
         display: flex;
         flex-direction: row;
-        background-position-x:right ;
-        background-position-y: bottom;
-        background-repeat: no-repeat;
-        background-size: 50%;
     }
     .process-item1 {
         /* padding: 2rem; */
@@ -78,6 +78,9 @@
         margin-bottom: 4rem;
         background: #FAFAFA; 
     }
+    .businessSolution-body {
+        flex-direction: row;
+    }
 
     .solution {
         width: 50%;
@@ -89,8 +92,8 @@
         font-size: .8rem;
     }
     .businessSolution-ele1 {
-        width: 50%;
-        height: 60%;
+        max-width: 55%;
+        /* height: 60%; */
     }
      .businessSolution {
         text-align: start;
@@ -102,12 +105,15 @@
         margin: 1.5rem 3rem 1.5rem 3rem;
         text-align: start;
     }
+    .features-item1 {
+        max-width: 25%;
+    }
     .benifits-body {
         display: flex;
         flex-direction: row;
     }
     .benifits-item1 {
-        width: 30%;
+        max-width: 25%;
         /* margin: 0 2rem; */
     }
     .benifits-item1-ele1 {
@@ -187,7 +193,7 @@
         width: 37%;
     }
     .speedCheck-item2 {
-        width: 60%;
+        max-width: 60%;
         text-align: start;
         /* padding-left:.5rem ; */
         /* margin-left: 10%; */
@@ -246,3 +252,10 @@
     }
     
 } */
+
+@media(min-width:1392px){
+    .nav-margin {
+        margin: 0rem 8rem 0rem 7.938rem;
+    }
+    
+}

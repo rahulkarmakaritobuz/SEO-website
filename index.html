@@ -17,14 +17,14 @@
     <link rel="styleSheet" href="./Css/mediaQuery.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+     <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
     <title>Figma Layout2</title>
 </head>
 
 <body class="">
-
-    <!-- Example Code -->
     <!-- NAV BAR VIEW -->
-    <nav class="container">
+
+    <!-- <nav class="container">
         <div class="navbar-expand-lg nav-margin">
             <div class="row justify-content-between">
 
@@ -62,14 +62,35 @@
                         </form>
                     </div>
                 </div>
-
-                <!-- <form class="col-3 d-flex" id="navbarSupportedContent" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn fa fa-search bg-warning" type="submit" fdprocessedid="6qpxw"></button>
-            </form> -->
             </div>
         </div>
-    </nav>
+    </nav> -->
+     <header id="luxbar" class=" luxbar-body ">
+        <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+        <div class="nav-margin mt-4 luxbar-bodyHeight luxbar-menu w-auto luxbar-menu-right bg-white luxbar-menu-light">
+            <ul class="luxbar-navigation">
+                <li class="luxbar-header">
+                    <a href="#" class="p-0 d-flex align-items-center luxbar-brand navigation-title">nuvosa<i class="fa fa-circle  logo"></i></a>
+                    <label class="luxbar-hamburger luxbar-hamburger-doublespin" 
+                    id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+                </li>
+                <!-- <ul class="luxbar-item d-flex align-items-center luxbar-item-ele0"> -->
+                    <li class="luxbar-item bg-white m-2"><a href="#">Home</a></li>
+                    <li class="luxbar-item bg-white m-2"><a href="#">Project</a></li>
+                    <li class="luxbar-item bg-white m-2"><a href="#">Blog</a></li>
+                    <li class="luxbar-item bg-white m-2"><a href="#">Pricing</a></li>
+                    <li class="luxbar-item bg-white m-2"><a href="#">Contact</a></li>
+                <!-- </ul> -->
+                
+                <li class="luxbar-item bg-white m-1 d-flex align-items-center">
+                    <a class="luxbar-item-ele1" href="#">Let's Talk</a>
+                </li>
+                <li class="luxbar-item bg-white m-2 me-3 ms-3 d-flex align-items-center">
+                    <button class="btn p-3 fa fa-search bg-warning " type="submit" fdprocessedid="6qpxw"></button>
+                </li>
+            </ul>
+        </div>
+    </header>
 
     <!-- PAGE HEADING -->
 
@@ -82,7 +103,7 @@
                 is simply. It is a long established fact that a reader will be distracted.
             </p>
             <div class="addvertise-section1-ele">
-                <button class="btn bg-warning me-4">Get Started </button>
+                <a href="#" class="p-2 rounded-1 bg-warning me-4">Get Started </a>
                 <a href="#"><img src="./Images/YouTube.png">Take a tour</a>
             </div>
 
@@ -188,9 +209,9 @@
     <!-- PERFECT BUSINESS SOLUTION -->
 
     <section class="businessSolution ">
-        <div class="container-fluid">
-            <div class="row nav-margin">
-                <div class="col-lg-4 d-flex justify-content-center flex-column mb-5 mt-3 p-0 solution">
+        <!-- <div class="container-fluid"> -->
+            <div class="businessSolution-body d-flex nav-margin align-items-center justify-content-center pb-4">
+                <div class="d-flex justify-content-center flex-column mb-5 mt-3 p-0 solution">
                     <p class="solution-heading">Perfect Solution For Your <span>Business</span></p>
                     <p class="solution-bio mb-5">It is a long established fact that a reader will be distracted by the
                         It is a long established .t is a long established fact that a reader will be distracted by the
@@ -199,77 +220,78 @@
                         <button class="btn bg-warning me-4">Learn More </button>
                     </div>
                 </div>
-                <img class="col-lg-4 mt-3 businessSolution-ele1" src="./Images/macBookPro.png">
+                <img class=" mt-3 businessSolution-ele1" src="./Images/macBookPro.png">
             </div>
-        </div>
+        <!-- </div> -->
     </section>
 
     <!-- QUALITIES FEATURES -->
 
-    <section class="features">
-        <div class="d-flex flex-column mb-4 p-3 position-relative features-item1">
+    <section class="features nav-margin justify-content-center">
+        <div class="d-flex flex-column mb-4 p-3 m-3 position-relative features-item1">
             <div class="position-relative mb-4">
                 <img src="./Images/Lightning2.png" class="position-relative">
             </div>
             <p class="features-ele1">Grow Your Business</p>
             <p class="features-ele2">It is a long established fact that a reader will be distracted by.</p>
-            <summary>Read more...</summary>
+            <a href="#">Read more...</a>
         </div>
-        <div class="d-flex flex-column mb-4 p-3 position-relative features-item1">
+        <div class="d-flex flex-column mb-4 p-3 m-3 position-relative features-item1">
             <div class="position-relative mb-4">
                 <img src="./Images/Lightning1.png" class="position-relative">
             </div>
             <p class="features-ele1">Get Quality leads</p>
             <p class="features-ele2">It is a long established fact that a reader will be distracted by.</p>
-            <summary>Read more...</summary>
+            <a href="#">Read more...</a>
         </div>
-        <div class="d-flex flex-column mb-4 p-3 position-relative features-item1">
+        <div class="d-flex flex-column mb-4 p-3 m-3 position-relative features-item1">
             <div class="position-relative mb-4">
                 <img src="./Images/Lightning.png" class="position-relative">
             </div>
             <p class="features-ele1">Drive more sales</p>
             <p class="features-ele2">It is a long established fact that a reader will be distracted by.</p>
-            <summary>Read more...</summary>
+            <a href="#">Read more...</a>
         </div>
     </section>
 
     <!-- WHY YOU SHOULD CHOOSE US -->
 
     <section class="d-flex flex-column text-center align-items-center benifits">
-        <div class="nav-margin mt-4 mb-4 pb-1">
-            <p class="benifits-ele1">why you should <span>choose us.</span></p>
+        <div class="nav-margin mt-4 mb-4 pb-1 d-flex flex-column align-items-center benifits-heading">
+            <h1 class="benifits-ele1">why you should <span>choose us.</span></h1>
             <p class="benifits-ele2 p-2">It is a long established fact that a reader will be distracted by the readable
                 content .It is a long established fact that a reader .It is a long established fact that a reader will be .</p>
-        </div>
-        <div class="justify-content-between nav-margin align-items-center benifits-body">
-            <div class="d-flex flex-column align-items-center benifits-item1">
-                <img src="./Images/image 30.png" class="benifits-item1-ele1 ">
-                <p class="benifits-item1-ele2">See optimazadion</p>
-                <p class="benifits-ele2 p-2">It is a long established fact that a reader will be distracted by.It is
-                    a long established.</p>
-                <div class="mb-4 addvertise-section1-ele">
-                <button class="btn bg-warning me-4">Learn More </button>
-                </div>
-            </div>
-            <div class="d-flex  flex-column align-items-center benifits-item1">
-                <img src="./Images/image 31.png" class="benifits-item1-ele1 ">
-                <p class="benifits-item1-ele2">Keyword research</p>
-                <p class="benifits-ele2 p-2">It is a long established fact that a reader will be distracted by.It is
-                    a long established.</p>
-                <div class="mb-4 addvertise-section1-ele">
+            <div class="justify-content-center gap-3 align-items-center benifits-body">
+                <div class="d-flex flex-column align-items-center benifits-item1">
+                    <img src="./Images/image 30.png" class="benifits-item1-ele1 ">
+                    <p class="benifits-item1-ele2">See optimazadion</p>
+                    <p class="benifits-ele2 p-2">It is a long established fact that a reader will be distracted by.It is
+                        a long established.</p>
+                    <div class="mb-4 addvertise-section1-ele">
                     <button class="btn bg-warning me-4">Learn More </button>
+                    </div>
                 </div>
-            </div>
-            <div class="d-flex  flex-column align-items-center benifits-item1">
-                <img src="./Images/image32.png" class="benifits-item1-ele1 ">
-                <p class="benifits-item1-ele2">Social marketing</p>
-                <p class="benifits-ele2 p-2">It is a long established fact that a reader will be distracted by.It is
-                    a long established.</p>
-                <div class="mb-4 addvertise-section1-ele">
-                    <button class="btn bg-warning me-4">Learn More </button>
+                <div class="d-flex  flex-column align-items-center benifits-item1">
+                    <img src="./Images/image 31.png" class="benifits-item1-ele1 ">
+                    <p class="benifits-item1-ele2">Keyword research</p>
+                    <p class="benifits-ele2 p-2">It is a long established fact that a reader will be distracted by.It is
+                        a long established.</p>
+                    <div class="mb-4 addvertise-section1-ele">
+                        <button class="btn bg-warning me-4">Learn More </button>
+                    </div>
+                </div>
+                <div class="d-flex  flex-column align-items-center benifits-item1">
+                    <img src="./Images/image32.png" class="benifits-item1-ele1 ">
+                    <p class="benifits-item1-ele2">Social marketing</p>
+                    <p class="benifits-ele2 p-2">It is a long established fact that a reader will be distracted by.It is
+                        a long established.</p>
+                    <div class="mb-4 addvertise-section1-ele">
+                        <button class="btn bg-warning me-4">Learn More </button>
+                    </div>
                 </div>
             </div>
         </div>
+        
     </section>
 
     <!-- YOU MAKE ASK WHAT SEO & WHY DO YOU NEED IT?  -->
@@ -336,7 +358,7 @@
 
     <!-- CHECK YOUR WEBSITE SPEED -->
 
-    <section class=" pt-4 pb-4 nav-margin text-center justify-content-between align-items-center speedCheck">
+    <section class=" pt-4 pb-4 nav-margin text-center justify-content-center gap-4 align-items-center speedCheck">
         <div class="d-flex pb-4 flex-column speedCheck-item2">
             <p class="benifits-ele1 speedCheck-item1-ele1">Check your website <span>speed</span></p>
             <p class="benifits-ele2 speedCheck-item1-ele1 ps-0">It is a long established fact that a reader will be
@@ -360,33 +382,39 @@
         <p class="suscriptions-ele1 mt-4">Our Plans</p>
         <p class="suscriptions-ele2">Choose the right SEO for you</p>
         <div class="suscriptions-body justify-content-between mb-5">
-            <div class="d-flex flex-column suscriptions-item1 m-3 pt-4 pb-5 ">
-                <p class="suscriptions-item1-ele1">Plue</p>
-                <h1 class="suscriptions-item1-ele2"><sup>$</sup>46<sub>/month</sub></h1>
-                <p class="suscriptions-ele2">408GB Bandwidth</p>
-                <p class="suscriptions-ele2">Business & Finance Analysing</p>
-                <p class="suscriptions-ele2">24 Hour Support</p>
-                <p class="suscriptions-ele2">Customer Management</p>
-                <button class="btn suscriptions-item1-ele4 ms-5 me-5">Get Started</button>
+           <div class="suscriptions-items">
+                <div class="d-flex flex-column suscriptions-item1 m-3 pt-4 pb-5 ">
+                    <p class="suscriptions-item1-ele1">Plue</p>
+                    <h1 class="suscriptions-item1-ele2"><sup>$</sup>46<sub>/month</sub></h1>
+                    <p class="suscriptions-ele2">408GB Bandwidth</p>
+                    <p class="suscriptions-ele2">Business & Finance Analysing</p>
+                    <p class="suscriptions-ele2">24 Hour Support</p>
+                    <p class="suscriptions-ele2">Customer Management</p>
+                    <button class="btn suscriptions-item1-ele4 ms-5 me-5">Get Started</button>
+                </div>
+           </div>
+            <div class="suscriptions-items">
+                <div class="d-flex flex-column suscriptions-item1 m-3 pt-4 pb-5 ">
+                    <p class="suscriptions-item1-ele1">Beginner</p>
+                    <h1 class="suscriptions-item1-ele2"><sup>$</sup>66<sub>/month</sub></h1>
+                    <p class="suscriptions-ele2">408GB Bandwidth</p>
+                    <p class="suscriptions-ele2">Business & Finance Analysing</p>
+                    <p class="suscriptions-ele2">24 Hour Support</p>
+                    <p class="suscriptions-ele2">Customer Management</p>
+                    <button class="btn suscriptions-item1-ele4 ms-5 me-5">Get Started</button>
+                </div>
             </div>
-            <div class="d-flex flex-column suscriptions-item1 m-3 pt-4 pb-5 ">
-                <p class="suscriptions-item1-ele1">Beginner</p>
-                <h1 class="suscriptions-item1-ele2"><sup>$</sup>66<sub>/month</sub></h1>
-                <p class="suscriptions-ele2">408GB Bandwidth</p>
-                <p class="suscriptions-ele2">Business & Finance Analysing</p>
-                <p class="suscriptions-ele2">24 Hour Support</p>
-                <p class="suscriptions-ele2">Customer Management</p>
-                <button class="btn suscriptions-item1-ele4 ms-5 me-5">Get Started</button>
-            </div>
-            <div class="d-flex flex-column suscriptions-item1 m-3 pt-4 pb-5 ">
-                <p class="suscriptions-item1-ele1">Beginner</p>
-                <h1 class="suscriptions-item1-ele2"><sup>$</sup>86<sub>/month</sub></h1>
-                <p class="suscriptions-ele2">408GB Bandwidth</p>
-                <p class="suscriptions-ele2">Business & Finance Analysing</p>
-                <p class="suscriptions-ele2">24 Hour Support</p>
-                <p class="suscriptions-ele2">Customer Management</p>
-                <button class="btn suscriptions-item1-ele4 ms-5 me-5">Get Started</button>
-            </div>
+            <div class="suscriptions-items">
+                <div class="d-flex flex-column suscriptions-item1 m-3 pt-4 pb-5 ">
+                    <p class="suscriptions-item1-ele1">Advanced</p>
+                    <h1 class="suscriptions-item1-ele2"><sup>$</sup>86<sub>/month</sub></h1>
+                    <p class="suscriptions-ele2">408GB Bandwidth</p>
+                    <p class="suscriptions-ele2">Business & Finance Analysing</p>
+                    <p class="suscriptions-ele2">24 Hour Support</p>
+                    <p class="suscriptions-ele2">Customer Management</p>
+                    <button class="btn suscriptions-item1-ele4 ms-5 me-5">Get Started</button>
+                </div>
+            </div>    
         </div>
     </section>
 
@@ -489,50 +517,6 @@
         <div class="swiper-pagination"></div>
     </section>
     
-    <!-- <section class="d-flex flex-column text-center  mt-5">
-        <p class="suscriptions-ele1 nav-margin">Our clients say</p>
-        <p class="suscriptions-ele2 nav-margin">It is a long established fact that a reader will be distracted by the readable
-            content .It is a </p>
-        <div class=" p-3 clientsSays text-center align-items-center">
-            <div
-                class="d-flex flex-column pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
-                <img src="./Images/tag.png" class="position-absolute clientsSays-item1-ele4 ">
-                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the
-                    readable content .It is a long established fact that a reader </p>
-                <img src="./Images/Ellipse 404.svg" class="clientsSays-item1-ele6">
-                <p class="clientsSays-item1-ele7">Clay Porter</p>
-                <p class="clientsSays-item1-ele8">Ship builder</p>
-            </div>
-            <div
-                class="carousel-item d-flex flex-column pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
-                <img src="./Images/tag.png" class="position-absolute clientsSays-item1-ele4 ">
-                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the
-                    readable content .It is a long established fact that a reader </p>
-                <img src="./Images/Ellipse 504.svg" class="clientsSays-item1-ele6">
-                <p class="clientsSays-item1-ele7">Clay Porter</p>
-                <p class="clientsSays-item1-ele8">Ship builder</p>
-            </div>
-            <div
-                class="carousel-item d-flex flex-column pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
-                <img src="./Images/tag.png" class="position-absolute clientsSays-item1-ele4 ">
-                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the
-                    readable content .It is a long established fact that a reader </p>
-                <img src="./Images/Ellipse 505.svg" class="clientsSays-item1-ele6">
-                <p class="clientsSays-item1-ele7">Clay Porter</p>
-                <p class="clientsSays-item1-ele8">Ship builder</p>
-            </div>
-            <div
-                class="carousel-item d-flex flex-column pt-4 ps-5 pe-5 m-2 position-relative align-items-center clientsSays-item1-ele3">
-                <img src="./Images/tag.png" class="position-absolute clientsSays-item1-ele4 ">
-                <p class="clientsSays-item1-ele5">It is a long established fact that a reader will be distracted by the
-                    readable content .It is a long established fact that a reader </p>
-                <img src="./Images/Ellipse 506.svg" class="clientsSays-item1-ele6">
-                <p class="clientsSays-item1-ele7">Clay Porter</p>
-                <p class="clientsSays-item1-ele8">Ship builder</p>
-            </div>
-        </div>
-    </section> -->
-
     <!-- SUSCRIBE & FIND THE PERFECT COSMETICS -->
 
     <section class="d-flex justify-content-center mt-5 mb-5 text-center ">
@@ -551,8 +535,8 @@
 
     <footer class="container">
         <div class="row">
-            <div>
-                <h1 class="text-center">novusa</h1>
+            <div class="text-center">
+                <h1 class=" d-flex justify-content-center align-items-center">novusa<i class="fa fa-circle  logo"></i></h1>
             </div>
         </div>
         <div class="row pb-5 border-bottom">
@@ -583,6 +567,10 @@
         var swiper = new Swiper(".mySwiper", {
         slidesPerView: "2",
         spaceBetween: 30,
+        autoplay: {
+            delay:2500, 
+            disableOnInteraction:false
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,

@@ -1,3 +1,15 @@
+// Navbar mouse scrolling lock
+const luxbar = document.getElementById("luxbar");
+
+luxbar.onmouseover = function(){
+   document.body.style.overflowY = "hidden";
+};
+
+luxbar.onmouseout = function(){
+   document.body.style.overflowY = "auto";
+};
+
+//Form validation
 let validateEmail=(mail) =>{
     if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
      {
