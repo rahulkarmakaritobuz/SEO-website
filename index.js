@@ -62,11 +62,14 @@ let speedCheckSubmit = ()=>{
     }    
 }
 
-// var swiper = new Swiper(".mySwiper", {
-//     slidesPerView: "2",
-//     spaceBetween: 30,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//   });
+//Navigation animation
+setTimeout(() => {
+    document.querySelector(".btn").style.display =  'block';
+    
+    gsap.from(".btn" , {duration: 2 , y: "-400%", ease: 'elastic'});
+},2500)
+
+
+document.querySelector(".btn").style.display =  'none';
+gsap.from("header" , {duration: 2 , y: "-100%", ease: 'bounce'});
+
