@@ -6,6 +6,10 @@ body{
     font-family: 'Poppins', sans-serif; 
 }
 
+.addvertise-section1-ele button:hover {
+    color: white;
+}
+
 .nav-margin {
     margin: 0rem 0.938rem 0rem 0.938rem;
 }
@@ -15,62 +19,15 @@ body{
     color: #BC424E;
     margin-left: .5rem;
 }
-.luxbar-body {
-    height: 6rem !important;
-    background-color: white!important;
-}
-.luxbar-item-ele0 {
-    flex-direction: column;
-}
-/* .luxbar-bodyHeight {
-    height: 4.2rem !important;
-} */
-.luxbar-item a {
-    position: relative;
-    background-color: white;
-}
-.luxbar-item-ele1 {
-    border: 2px solid #212528;
-    border-radius: 4px;
-}
-.luxbar-item a::before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 4px;
-      border-radius: 4px;
-      background-color: #6F77F1;
-      bottom: 0;
-      left: 0;
-      transform-origin: right;
-      transform: scaleX(0);
-      transition: transform .3s ease-in-out;
-}
-  
-.luxbar-item a:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
-}
-.luxbar-body {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-.luxbar-item {
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
 
-.navigation-title {
-    font-weight: 500;
-    font-size: 2.5rem;
-}
-.navigation-items {
-    font-weight: 400;
-    font-size: 1rem;
+.luxbar-navigation1 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    /* text-align: center; */
+    align-items: unset;
 }
 
 .advertise {
@@ -158,6 +115,9 @@ body{
 }
 .management-button {
     width: 2rem;
+    text-decoration: none;
+    color:#212528;
+
 }
 .management-item1 {
     box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.07);
@@ -482,6 +442,12 @@ box-shadow: 0px 10px 14px 2px rgba(14, 17, 60, 0.03);
     border: 1px solid #e6e7e7;
     padding:2rem
 }
+
+.link-style {
+    text-decoration: none;
+    color: #212528;
+}
+
 .teams-item1-ele2 {
     font-size: 1.375rem;
 }
@@ -495,7 +461,7 @@ box-shadow: 0px 10px 14px 2px rgba(14, 17, 60, 0.03);
 .teams-item1-ele1 {
     max-width: 100%;
 }
-.members-item2 button:hover, .teams-item1-ele2:hover {
+.members-item2 a:hover, .teams-item1-ele2:hover {
     color: #6F77F1;
 }
 
@@ -578,4 +544,5 @@ box-shadow: 0px 10px 14px 2px rgba(14, 17, 60, 0.03);
     text-transform: capitalize;
     color: #828282;
     opacity: 0.6;
+    justify-content: center;
 }

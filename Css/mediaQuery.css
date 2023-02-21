@@ -4,10 +4,16 @@
         margin: 0rem 3.9rem 0rem 3.9rem;
     }
     
-    .luxbar-item-ele0 {
+    /* .luxbar-item-ele0 {
         flex-direction: row;
-    }
+    } */
 
+    .luxbar-navigation1 {
+        flex-flow: row;
+        justify-content: flex-end;
+        align-items:center;
+    }
+    
     .advertise {
         display: flex;
         flex-direction: row;
@@ -19,10 +25,10 @@
         font-size: 1.25rem;
     }
     .advertise-section1{
-        width: 50%;
+        max-width: 45%;
     }
     .advertise-section2 {
-        width: 45%;
+        max-width: 45%;
     }
     
     .management {
@@ -233,6 +239,10 @@
     .formBox-item1 {
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    .footerBottom {
+        justify-content: space-between;
     }
 }
 

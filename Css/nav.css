@@ -1,0 +1,66 @@
+.luxbar-body {
+    height: 6rem !important;
+    background-color: white!important;
+}
+/* .luxbar-item-ele0 {
+    flex-direction: column;
+} */
+/* .luxbar-bodyHeight {
+    height: 4.2rem !important;
+} */
+/* .luxbar-body .luxbar-menu {
+    height: 100%;
+} */
+.navigation-options {
+    text-align: center;
+    padding: .6rem .8rem .6rem .8rem;
+    /* justify-content: center; */
+}
+.navigation-options a {
+    position: relative;
+    background-color: white;
+}
+.luxbar-item-ele1 {
+    border: 2px solid #212528;
+    border-radius: 4px;
+}
+.navigation-options a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #6F77F1;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+.navigation-options a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.luxbar-body {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.luxbar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0 ; */
+}
+
+.navigation-title {
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+.navigation-items {
+    font-weight: 400;
+    font-size: 1rem;
+}
